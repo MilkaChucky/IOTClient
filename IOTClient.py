@@ -64,8 +64,6 @@ print ("Connecting to broker " + broker + "...\n")
 client.connect(broker, port, keepalive)
 client.loop_start()
 
-i = 0
-
 while True:
     humidity, temperature = DHT.read(sensor, pin)
     if isReadingValid(humidity, temperature):
@@ -76,9 +74,6 @@ while True:
             }
         print(payload)
         client.publish(topic, json.dumps(payload))
-        i += 1
-    if i == 2:
-        break
     time.sleep(sec)
     
 time.sleep(4)
