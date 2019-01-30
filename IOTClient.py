@@ -68,6 +68,7 @@ while True:
     humidity, temperature = DHT.read(sensor, pin)
     if isReadingValid(humidity, temperature):
         payload = {
+            "deviceId": config["DEFAULT"]["DeviceID"],
             "date": str(datetime.datetime.now()),
             "temperature": temperature,
             "humidity": humidity
