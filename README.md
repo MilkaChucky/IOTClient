@@ -1,4 +1,4 @@
-# IOTClient
+# IoTClient
 IoT kliens alkalmazás megvalósítása python nyelven.
 
 ## Fejlesztés
@@ -14,8 +14,11 @@ $ pip isntall -r requirements.txt
 
 ## Futtatás
 A projekthez tartozó config.ini fájl egy példa fájl. Ennek alapján a felhasználó elkészítheti saját config.app.ini fájlját, amelyben megadott beállítások felülírják az alapértelmezett config.ini fájlban szereplő beállításokat.
+
 > **Figyelem!** Amennyiben virtuális fejlesztő környezetet használunk, ne fejejtsük el azt aktiválni futtatás előtt a 
 > ```sh
 > $ source venv/bin/activate
 > ``` 
 > parancsal!
+
+Az alkalmazás elindításához futtassuk a ```python IoTClient.py``` parancsot!
